@@ -1,7 +1,7 @@
 # Dummy user database
 users = [
     {"email": "userA@pmu.edu.sa", "password": "Password@123"},
-    {"email": "userB@pmu.edu.sa", "password": "password456"}
+    {"email": "userB@pmu.edu.sa", "password": "Password@456"}
 ]
 
 def login():
