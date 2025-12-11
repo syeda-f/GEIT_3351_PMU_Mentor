@@ -1,9 +1,9 @@
 
 #dummy database
 session_requests = [
-    {"sessionID":MS2025-12, "mentor":"mentorX@pmu.edu.sa", "mentee":"zunaikahk@pmu.edu.sa", "status": "pending", "start": None, "end": None, "mins": "", "feedback": "Good session"},
-    {"sessionID":MS2025-90, "mentor":"mentorY@pmu.edu.sa", "mentee":"syedif@pmu.edu.sa", "status": "accepted", "start": "13:00 18-12-2025", "end": "14:00 18-12-2025", "mins": "60 minutes", "feedback": "Bad mentor"},
-    {"sessionID":MS2025-21, "mentor":"mentorZ@pmu.edu.sa", "mentee":"damana@pmu.edu.sa", "status": "declined", "start": "8:00 4-1-2026", "end": "10:00 4-1-2026", "mins": "120 minutes", "feedback": "Very supportive mentor"},
+    {"sessionID":MS2025-12, "mentor":"nuhaak@pmu.edu.sa", "mentee":"zunaikahk@pmu.edu.sa", "status": "pending", "start": None, "end": None, "mins": "", "feedback": "Good session"},
+    {"sessionID":MS2025-90, "mentor":"anabiyas@pmu.edu.sa", "mentee":"syedif@pmu.edu.sa", "status": "accepted", "start": "13:00 18-12-2025", "end": "14:00 18-12-2025", "mins": "60 minutes", "feedback": "Bad mentor"},
+    {"sessionID":MS2025-21, "mentor":"humairan@pmu.edu.sa", "mentee":"damana@pmu.edu.sa", "status": "declined", "start": "8:00 4-1-2026", "end": "10:00 4-1-2026", "mins": "120 minutes", "feedback": "Very supportive mentor"},
 ]
 
 
