@@ -1,1 +1,1 @@
-hi
+print("Test message")
