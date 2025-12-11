@@ -29,10 +29,14 @@ def updateStatus(sessionID, status):
         return False
 
 def acceptRequest(sessionID):
-    if updateStatus(sessionID, "accepted") is True:
-        return "Request accepted"
-    else:
-        return "Request is not found"
+    req = getRequest(sessionID)
+    if req is not None:
+        if req["status"] == "accepted":
+            return "Request already accepted"
+        else:
+            if updateStatus(sessionID, "accepted") is True:
+                return "Request accepted"
+    return "Request not found"
 
 def updateShcedule(sessionID, startTime, endTime):
     req = getRequest(sessionID)
@@ -64,10 +68,14 @@ def recordMinutes(sessionID, meetingMinutes):
         return "No meeting minutes"
 
 def declineRequest(sessionID):
-    if updateStatus(sessionID, "declined") is True:
-        return "Request declined"
-    else:
-        return "Request not found"
+    req = getRequest(sessionID)
+    if req is not None:
+        if req["status"] == "declined":
+            return "Request already declined"
+        else:
+            if updateStatus(sessionID, "declined") is True:
+                return "Request declined"
+    return "Request not found"
 
 def getFeedback(sessionID):
     req = getRequest(sessionID)
