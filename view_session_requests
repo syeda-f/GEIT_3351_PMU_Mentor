@@ -14,7 +14,11 @@ def getRequest(sessionID):
     return None
 
 def viewSessionRequest(sessionID):
-    return getRequest(sessionID)
+    req = getRequest(sessionID)
+    if req is not None:
+        return req
+    else:
+        return "No session found with this ID"
 
 def updateStatus(sessionID, status):
     req = getRequest(sessionID)
@@ -57,7 +61,7 @@ def recordMinutes(sessionID, meetingMinutes):
     if recordSessionTime(sessionID, meetingMinutes) is True:
         return "Meeting minutes saved"
     else:
-        return "Not found"
+        return "No meeting minutes"
 
 def declineRequest(sessionID):
     if updateStatus(sessionID, "declined") is True:
@@ -70,7 +74,7 @@ def getFeedback(sessionID):
     if req is not None:
         return req["feedback"]
     else:
-        return None
+        return "Session ID not found"
 
 def viewFeedback(sessionID):
     return getFeedback(sessionID)
