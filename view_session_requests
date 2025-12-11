@@ -1,9 +1,9 @@
 
 #dummy database
 session_requests = [
-    {"sessionID":MS2025-12, "mentor":"mentorA@pmu.edu.sa", "mentee":"zunaikahk@pmu.edu.sa", "status": "pending", "start": None, "end": None, "mins": "", "feedback": "Good session"},
-    {"sessionID":MS2025-90, "mentor":"mentorB@pmu.edu.sa", "mentee":"syedif@pmu.edu.sa", "status": "accepted", "start": "13:00 18-12-2025", "end": "14:00 18-12-2025", "mins": "60 minutes", "feedback": "Bad mentor"},
-    {"sessionID":MS2025-21, "mentor":"mentorC@pmu.edu.sa", "mentee":"damana@pmu.edu.sa", "status": "declined", "start": "8:00 4-1-2026", "end": "10:00 4-1-2026", "mins": "120 minutes", "feedback": "Very supportive mentor"},
+    {"sessionID":MS2025-12, "mentor":"mentorX@pmu.edu.sa", "mentee":"zunaikahk@pmu.edu.sa", "status": "pending", "start": None, "end": None, "mins": "", "feedback": "Good session"},
+    {"sessionID":MS2025-90, "mentor":"mentorY@pmu.edu.sa", "mentee":"syedif@pmu.edu.sa", "status": "accepted", "start": "13:00 18-12-2025", "end": "14:00 18-12-2025", "mins": "60 minutes", "feedback": "Bad mentor"},
+    {"sessionID":MS2025-21, "mentor":"mentorZ@pmu.edu.sa", "mentee":"damana@pmu.edu.sa", "status": "declined", "start": "8:00 4-1-2026", "end": "10:00 4-1-2026", "mins": "120 minutes", "feedback": "Very supportive mentor"},
 ]
 
 
@@ -78,3 +78,56 @@ def getFeedback(sessionID):
 
 def viewFeedback(sessionID):
     return getFeedback(sessionID)
+
+def main(): 
+    print("")
+    for session in session_requests:
+        print("Session ID:", session["sessionID"])
+        print("  Status:", session["status"])
+        print("  Mentor:", session["mentor"])
+        print("  Mentee:", session["mentee"])
+        print("  Time:", session["start"], "to", session["end"])
+        print("  Minutes:", session["mins"])
+        print("  Feedback:", session["feedback"])
+        print("")
+
+    print("Test viewSessionRequest:")
+    print("   Look for session MS2025-12: ")
+    print("   Result:", viewSessionRequest("MS2025-12"))
+    print("   Look for non-existent session MS2025-999:")
+    print("   Result:", viewSessionRequest("MS2025-999"))
+    
+    print("")
+    print("Test acceptRequest:")
+    print("   Before accepting [Status of MS2025-12]: ", getRequest("MS2025-12")["status"])
+    print("   Accept request MS2025-12:", acceptRequest("MS2025-12"))
+    print("   After accepting [Status of MS2025-12]: ", getRequest("MS2025-12")["status"])
+    
+    print("")
+    print("Test declineRequest:")
+    print("   Before declining [Status of MS2025-21]: ", getRequest("MS2025-21")["status"])
+    print("   Decline request MS2025-21:", declineRequest("MS2025-21"))
+    print("   After declining [Status of MS2025-21]: ", getRequest("MS2025-21")["status"])
+    
+    print("")
+    print("Test scheduleSession:")
+    print("   Schedule session MS2025-12: ", scheduleSession("MS2025-12", "14:30", "15:30"))
+    print("   New schedule [Start time:", getRequest("MS2025-12")["start"], "End time]:", getRequest("MS2025-12")["end"])
+    
+    print("")
+    print("Test recordMinutes:")
+    print("   Record minutes for MS2025-12: ", recordMinutes("MS2025-12", "60 minutes of Python"))
+    print("   New minutes: ", getRequest("MS2025-12")["mins"])
+    
+    print("")
+    print("Test getFeedback and viewFeedback functions:")
+    print("   getFeedback for MS2025-90: ", getFeedback("MS2025-21"))
+    print("   viewFeedback for MS2025-90: ", viewFeedback("MS2025-21"))
+    
+    print("")
+    print("Test error cases:")
+    print("   Accept non-existent session MS2025-55: ", acceptRequest("MS2025-555"))
+    print("   Schedule non-existent session MS2025-29: ", scheduleSession("MS2025-777", "10:00", "11:00"))
+    
+if __name__ == "__main__":
+    main()
