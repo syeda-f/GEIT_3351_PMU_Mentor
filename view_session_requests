@@ -44,3 +44,33 @@ def scheduleSession(sessionID, startTime, endTime):
         return "Session scheduled"
     else:
         return "Session is not found"
+
+def recordSessionTime(sessionID, meetingMinutes):
+    req = getRequest(sessionID)
+    if req is not None:
+        req["mins"] = meetingMinutes
+        return True
+    else:
+        return False
+
+def recordMinutes(sessionID, meetingMinutes):
+    if recordSessionTime(sessionID, meetingMinutes) is True:
+        return "Meeting minutes saved"
+    else:
+        return "Not found"
+
+def declineRequest(sessionID):
+    if updateStatus(sessionID, "declined") is True:
+        return "Request declined"
+    else:
+        return "Request not found"
+
+def getFeedback(sessionID):
+    req = getRequest(sessionID)
+    if req is not None:
+        return req["feedback"]
+    else:
+        return None
+
+def viewFeedback(sessionID):
+    return getFeedback(sessionID)
