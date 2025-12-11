@@ -13,17 +13,4 @@ def getRequest(sessionID):
             return req
     return None
 
-def viewSessionRequest(sessionID):
-    return getRequest(sessionID)
 
-def updateStatus(sessionID, status):
-    req = getRequest(sessionID)
-    if req["status"] == status:
-        return True
-    return False
-
-def acceptRequest(sessionID):
-    if updateStatus(sessionID, "accepted"):
-        return "Request accepted"
-    else:
-        return "Request not accepted"
