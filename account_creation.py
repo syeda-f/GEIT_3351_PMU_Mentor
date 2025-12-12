@@ -43,12 +43,11 @@ def verifyActive(ID, domain, password):
       if len(ID) == 8 and ID == students["ID"]:
         if password == students["password"]: 
           displayAcceptedMessage(1)
-          
         else: displayErrorMessage(3)
       else: displayErrorMessage(2)
   else: displayErrorMessage(1)
           
-#splitting email & passing on crednetials to another method
+#splitting email & passing on crednetials to another method so user knows exactly where she went wrong
 def verifyAccount(studentEmail, password):
   if "@" in studentEmail and studentEmail.count("@") == 1:
     ID, domain = studentEmail.split("@")
