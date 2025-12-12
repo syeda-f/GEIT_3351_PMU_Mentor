@@ -1,16 +1,21 @@
 #using python dictionaries for making dummy databases
 
-#dummy database of all active PMU student emails and their passwords
+#dummy database of all active PMU students
 students = [
-  {"Name": "Daman Arshad", "ID": "202300481", "email": "202300481@pmu.edu.sa", "password": "damDam##000"},
-  {"Name": "Syeda Fatima", "ID": "202300228", "email": "202300228@pmu.edu.sa", "password": "syedI2004!!"},
-  {"Name": "Zainab Fatima", "ID": "202300316", "email": "202300316@pmu.edu.sa", "password": "ZaZa67%67%"},
-  {"Name": "Zunairah Khan", "ID": "202300994", "email": "202300994@pmu.edu.sa", "password": "zunZun123#"}
+  {"Name": "Daman Arshad", "PMUID": "202300481", "email": "202300481@pmu.edu.sa", "PMUpassword": "damDam##000"},
+  {"Name": "Syeda Fatima", "PMUID": "202300228", "email": "202300228@pmu.edu.sa", "PMUpassword": "syedI2004!!"},
+  {"Name": "Zainab Fatima", "PMUID": "202300316", "email": "202300316@pmu.edu.sa", "PMUpassword": "ZaZa67%67%"},
+  {"Name": "Zunairah Khan", "PMUID": "202300994", "email": "202300994@pmu.edu.sa", "PMUpassword": "zunZun123#"}
+]
+
+#dummy database of all active users
+users = [
+  {"Name": "Zainab Fatima", "Email": "202300316@pmu.edu.sa", "Password": "zain911F@!", "XP": 102}
 ]
 
 #dummy database of all active mentors
 mentors = [
-  {"Name": "Zainab Fatima",  },
+  {"Name": "Zainab Fatima", "Email": "202300316@pmu.edu.sa", "Password": "zain911F@!", "XP": 102, "MentorID": MO10001}
 ]
 
 #dummy database of all active mentees
@@ -42,9 +47,9 @@ def verifyActive(ID, domain, password):
     if domain == "pmu.edu.sa":
         found = False
         for student in students:
-            if len(ID) == 9 and student["ID"] == ID:
+            if len(ID) == 9 and student["PMUID"] == ID:
                 found = True
-                if student["password"] == password:
+                if student["PMUpassword"] == password:
                     displayAcceptedMessage(1)
                     return True
                 else: 
