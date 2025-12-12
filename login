@@ -31,7 +31,7 @@ def login(email, password):
     
     if result["result"] == "success":
         user = result["user"]
-        print(f"Login successful! Welcome {user['email']}")
+        print(f"Login successful! Welcome ")
         return "Welcome"
     else:
         print(f"Error: {result['message']}")
