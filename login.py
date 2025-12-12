@@ -1,3 +1,4 @@
+#dummy database for user emails and passwords for login
 users = [
     {"email": "userA@pmu.edu.sa", "password": "Password@123"},
     {"email": "userB@pmu.edu.sa", "password": "Password@456"}
