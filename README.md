@@ -18,7 +18,8 @@ Python 3.x must be installed on your system
 2. Inputs: Follow the on-screen prompts
 
 ## Example Workflow (View session requests)
-```Session ID: MS2025-12
+```
+Session ID: MS2025-12
   Status: pending
   Mentor: 202300308@pmu.edu.sa
   Mentee: 202300994@pmu.edu.sa
