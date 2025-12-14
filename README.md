@@ -1,5 +1,5 @@
-## PMU Mentor
-# Peer Mentorship Application
+# PMU Mentor
+## Peer Mentorship Application
 
 Platfrom designed specifically to support and adhere to the needs of PMU students. 
 It is a collaborative space where more experienced students, referred to as mentors, can offer their guidance, support, and knowledge to less experienced students, referred to as mentees. This application aims to help the mentees in their studies and prepare them for the competitive job market.
