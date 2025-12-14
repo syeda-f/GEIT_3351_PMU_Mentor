@@ -20,7 +20,7 @@ Open your terminal or command prompt, navigate to the folder containing the file
 - **Linux/macOS** -> `python3 SP_Project.py` or `./SP_Project.py`
 
 ## Usage Guide
-1. Navigation: The program uses a numbered menu system. Enter the number corresponding to the option you want (for example, `1` for Arithmetic)
+1. Navigation: The program uses a numbered menu system. Enter the number corresponding to the option you want (1: Create Account & 2: Login)
 2. Inputs: Follow the on-screen prompts
    
 ## References
