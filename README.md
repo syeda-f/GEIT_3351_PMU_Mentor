@@ -13,12 +13,6 @@ It is a collaborative space where more experienced students, referred to as ment
 Python 3.x must be installed on your system
 - To check if Python is installed, open your terminal/command prompt and type `python --version` or `python3 --version`
 
-## How to Run
-Open your terminal or command prompt, navigate to the folder containing the file, and run one of the following commands:
-
-- **Windows** -> `python SP_Project.py`
-- **Linux/macOS** -> `python3 SP_Project.py` or `./SP_Project.py`
-
 ## Usage Guide
 1. Navigation: The program uses a numbered menu system. Enter the number corresponding to the option you want (1: Create Account & 2: Login)
 2. Inputs: Follow the on-screen prompts
