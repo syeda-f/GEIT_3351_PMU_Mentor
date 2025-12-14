@@ -1,9 +1,9 @@
 
 #dummy database
 session_requests = [
-    {"sessionID":MS2025-12, "mentor":"nuhaak@pmu.edu.sa", "mentee":"202300994@pmu.edu.sa", "status": "pending", "start": None, "end": None, "mins": "", "feedback": "Good session"},
-    {"sessionID":MS2025-90, "mentor":"wasana@pmu.edu.sa", "mentee":"202300288@pmu.edu.sa", "status": "accepted", "start": "13:00 18-12-2025", "end": "14:00 18-12-2025", "mins": "60 minutes", "feedback": "Bad mentor"},
-    {"sessionID":MS2025-21, "mentor":"saraha@pmu.edu.sa", "mentee":"202301587@pmu.edu.sa", "status": "declined", "start": "8:00 4-1-2026", "end": "10:00 4-1-2026", "mins": "120 minutes", "feedback": "Very supportive mentor"},
+    {"sessionID": "MS2025-12", "mentor":"nuhaak@pmu.edu.sa", "mentee":"202300994@pmu.edu.sa", "status": "pending", "start": None, "end": None, "mins": "", "feedback": "Good session"},
+    {"sessionID": "MS2025-90", "mentor":"wasana@pmu.edu.sa", "mentee":"202300288@pmu.edu.sa", "status": "accepted", "start": "13:00 18-12-2025", "end": "14:00 18-12-2025", "mins": "60 minutes", "feedback": "Bad mentor"},
+    {"sessionID": "MS2025-21", "mentor":"zainabf@pmu.edu.sa", "mentee":"202301587@pmu.edu.sa", "status": "declined", "start": "8:00 4-1-2026", "end": "10:00 4-1-2026", "mins": "120 minutes", "feedback": "Very supportive mentor"},
 ]
 
 
@@ -128,7 +128,7 @@ def main():
     print("   New minutes: ", getRequest("MS2025-12")["mins"])
     
     print()
-    print("Test getFeedback and viewFeedback functions:")
+    print("Test getFeedback and viewFeedback:")
     print("   getFeedback for MS2025-90: ", getFeedback("MS2025-21"))
     print("   viewFeedback for MS2025-90: ", viewFeedback("MS2025-21"))
     
