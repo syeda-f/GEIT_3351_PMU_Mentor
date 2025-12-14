@@ -13,12 +13,6 @@ It is a collaborative space where more experienced students, referred to as ment
 Python 3.x must be installed on your system
 - To check if Python is installed, open your terminal/command prompt and type `python --version` or `python3 --version`
 
-## Installation & Configuration
-1. Download: Save the file SP_Project.py to a directory of your choice.
-2. Dependencies: This program uses only Python standard libraries (`math`, `sys`, `operator`). No external `pip` installations are required.
-3. Permissions (Linux/macOS): If you wish to run the script directly as an executable, you may need to grant execution permissions:
-                                  `chmod +x SP_ Project.py`
-
 ## How to Run
 Open your terminal or command prompt, navigate to the folder containing the file, and run one of the following commands:
 
