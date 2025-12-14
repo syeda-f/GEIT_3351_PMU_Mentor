@@ -20,7 +20,7 @@ Python 3.x must be installed on your system
 ## Example Workflow (View session requests)
 ```Session ID: MS2025-12
   Status: pending
-  Mentor: nuhaak@pmu.edu.sa
+  Mentor: 202300308@pmu.edu.sa
   Mentee: 202300994@pmu.edu.sa
   Time: None to None
   Minutes: 
@@ -28,7 +28,7 @@ Python 3.x must be installed on your system
 
 Session ID: MS2025-90
   Status: accepted
-  Mentor: wasana@pmu.edu.sa
+  Mentor: 202301446@pmu.edu.sa
   Mentee: 202300288@pmu.edu.sa
   Time: 13:00 18-12-2025 to 14:00 18-12-2025
   Minutes: 60 minutes
@@ -36,15 +36,15 @@ Session ID: MS2025-90
 
 Session ID: MS2025-21
   Status: declined
-  Mentor: zainabf@pmu.edu.sa
-  Mentee: 202301587@pmu.edu.sa
+  Mentor: 202300316@pmu.edu.sa
+  Mentee: 202300481@pmu.edu.sa
   Time: 8:00 4-1-2026 to 10:00 4-1-2026
   Minutes: 120 minutes
   Feedback: Very supportive mentor
 
 Test viewSessionRequest:
    Look for session MS2025-12: 
-   Result: {'sessionID': 'MS2025-12', 'mentor': 'nuhaak@pmu.edu.sa', 'mentee': '202300994@pmu.edu.sa', 'status': 'pending', 'start': None, 'end': None, 'mins': '', 'feedback': 'Good session'}
+   Result: {'sessionID': 'MS2025-12', 'mentor': '202300308@pmu.edu.sa', 'mentee': '202300994@pmu.edu.sa', 'status': 'pending', 'start': None, 'end': None, 'mins': '', 'feedback': 'Good session'}
    Look for non-existent session MS2025-999:
    Result: No session found with this ID
 
