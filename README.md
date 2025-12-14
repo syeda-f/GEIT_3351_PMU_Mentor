@@ -73,7 +73,8 @@ Test getFeedback and viewFeedback:
 
 Test error cases:
    Accept non-existent session MS2025-55:  Request not found
-   Schedule non-existent session MS2025-29:  Session is not found```
+   Schedule non-existent session MS2025-29:  Session is not found
+```
    
 ## References
 1. [w3schools](https://www.w3schools.com/python/python_dictionaries.asp) : used to comprehend and apply the knowledge of Python dictionaries
